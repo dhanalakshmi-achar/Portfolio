@@ -1,0 +1,68 @@
+.tab {
+  display: inline-block;
+  padding: 10px 35px; /* wider sideways */
+  background: #f9f9f9;
+  
+  border-bottom: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.2;
+  transition: all 0.3s ease;
+
+  /* Folder tab shape, wider */
+  clip-path: polygon(
+    8% 0,        /* inset top-left */
+    92% 0,       /* inset top-right */
+    100% 25%,    /* slope down right */
+    100% 100%,   /* bottom-right */
+    0 100%,      /* bottom-left */
+    0 25%        /* slope down left */
+  );
+
+  border-radius: 10px 10px 0 0; /* slightly rounded top corners */
+  position: relative;
+  margin-left: -10px; /* overlap effect */
+}
+
+/* Example colors */
+.tab:nth-child(1) {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+  z-index: 3;
+}
+
+.tab:nth-child(2) {
+  background: #ffeac5;
+  color: #000000;
+  border-color: #ffeac5;
+  z-index: 2;
+}
+
+.tab:nth-child(3) {
+  background: #b5d4fb;
+  color: #000000;
+  border-color: #b5d4fb;
+  z-index: 1;
+}
+.tab:nth-child(4) {
+  background: #ffd2ee;
+  color: #000000;
+  border-color: #ffd2ee;
+  z-index: 0;
+}
+
+.tab:hover {
+  filter: brightness(1.1);
+  z-index: 5;
+}
+
+.tabs {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0;
+ 
+  margin-top: 12px;
+}

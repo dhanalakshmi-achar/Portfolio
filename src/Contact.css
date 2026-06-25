@@ -1,0 +1,61 @@
+/* Contact.css */
+.contact {
+  background: linear-gradient(135deg, #a2d2ff, #bde0fe); /* soft dreamy blues */
+  /* padding: 3rem; */
+  border-radius: 12px;
+  color: #2e2e2e;
+  text-align: center;
+  animation: fadeUp 1s ease forwards;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2e2e2e;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-list li a {
+  color: #2e2e2e;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-list li a:hover {
+  color:  #9466ff; /* golden highlight against blue */
+  text-shadow: 0 0 10px rgba(255, 224, 102, 0.7);
+}
+
+.icon {
+  margin-right: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-list li:hover .icon {
+  transform: scale(1.2);
+  color: #9466ff;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.contact-img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;   /* keeps proportions neat */
+  border-radius: 12px; /* optional rounded corners */
+  margin-bottom: 20px;
+}
