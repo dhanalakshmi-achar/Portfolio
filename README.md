@@ -59,4 +59,4 @@ Live site: portfolio-mauve-three-94.vercel.app
 ##  Author
 **Dhanalakshmi**  
 Diploma Student in Cloud Computing & Big Data  
-Passionate about building beauty & haircare tech products, aesthetic UI design, and content creation 
+Passionate about building beauty & haircare tech products, aesthetic UI design, and content creation
