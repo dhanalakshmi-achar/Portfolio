@@ -37,7 +37,7 @@ Deployed with modern tools for a smooth, responsive experience.
 ---
 
 ##  Deployment
-Live site: [View Portfolio]portfolio-mauve-three-94.vercel.app
+Live site: portfolio-mauve-three-94.vercel.app
 
 ---
 
