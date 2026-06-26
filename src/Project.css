@@ -1,59 +1,65 @@
+/* project.css */
 .page.projects {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px;
-  color: #fff;
-  background: linear-gradient(270deg, #9790ff, #c3bffa, #e2e0ff);
+  color: #bf94ff;
+  background: linear-gradient(270deg, #ffffff, #dbd9ff, #e2e0ff);
   background-size: 600% 600%;
   animation: gradientShift 15s ease infinite;
 }
-
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* 2 cards per row */
+  gap: 0px;                        /* space between cards */
+  width: 100%;
+  margin: 0;
+  padding: 0px;
+  background: pink;
 }
 
 .project-card {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
   padding: 20px;
-  width: 280px;
-  transition: all 0.3s ease;
-  text-align: center;
-  color: #333;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover */
 }
 
+/* ✨ Hover effect */
 .project-card:hover {
-  transform: translateY(-8px) scale(1.05);
-  box-shadow: 0 0 20px #ffffff, 0 0 40px #fbf8ff;
-}
-.project-list {
-  display: grid; /* use grid for clean rows */
-  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-  gap: 40px; /* spacing between cards */
-  justify-items: center; /* center cards in each column */
-  margin-top: rem;
+  transform: translateY(-8px);       /* card lifts up */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2); /* deeper shadow */
+  background: #fdfdfd;               /* subtle background change */
 }
 
-.project-card {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
-  padding: 20px;
-  width: 280px;
-  transition: all 0.3s ease;
-  text-align: center;
-  color: #333;
+.project-card img {
+  flex-shrink: 0;
+  width: 180px;
+  height: 140px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;   /* smooth zoom */
 }
 
-.project-card:hover {
-  transform: translateY(-8px) scale(1.05);
-  box-shadow: 0 0 20px #ffffff, 0 0 40px #fbf8ff
+/* ✨ Image zoom on hover */
+.project-card:hover img {
+  transform: scale(1.05);
 }
-.project-icon {
-  font-size: 40px;       /* size of icon */
-  color: #ffffff;        /* pink accent to match your gradient */
-  margin-bottom: 12px;
+
+.project-text {
+  flex: 1;
+  text-align: left;
+  transition: color 0.3s ease;
+}
+
+/* ✨ Title color change on hover */
+.project-card:hover .project-text h2 {
+  color: #ff4fa2; /* pink accent */
 }

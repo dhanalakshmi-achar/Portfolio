@@ -7,11 +7,20 @@ import workImage from "../images/coder.png";
 import projectImage from "../images/coder.png"; 
 
 const About = () => {
+  const skills = [
+    { name: "HTML", level: 90 },
+    { name: "CSS", level: 85 },
+    { name: "JavaScript", level: 80 },
+    { name: "React", level: 75 },
+    { name: "Supabase", level: 60 },
+  ];
+
+
   return (
     <section className="page about">
       <h2>About Me</h2>
       <div className="about-intro">
-        <img   src={myImage} alt="Akshara" className="about-image" />
+        <img   src={myImage} alt="img" className="about-image" />
         <p>
           Hi, I’m <strong>Dhanalakshmi</strong> — a Cloud Computing & Big Data student,
           passionate about blending technology with beauty and luxury branding.
@@ -51,23 +60,46 @@ const About = () => {
     
 
       <div className="about-section">
-        <h3> Achievements</h3>
-        <p>AWS Cloud Practitioner, EY AI Skills Passport, 15+ Figma projects.</p>
+        <h2> Achievements</h2>
+        <p>AWS Cloud Practitioner<br/>EY AI Skills Passport<br/>15+ Figma projects.</p>
       </div>
 
-      <div className="about-section">
-        <h3> Fun Facts</h3>
-        <p>
-          Languages:<br/> 1. English<br/> 2. Kannada <br/> 3. Marathi<br/> 4.Hindi<hr/>I like to Create: Website that are futuristic<hr/> Hobby:
-          exploring beauty-tech + social media growth .
-        </p>
-      </div>
+      
+      
+ 
+
+     
+
+      {/* Skills Section */}
+      <section className="skills">
+        <h2>Languages I Know</h2>
+        {skills.map((skill, index) => (
+          <div className="skill" key={index}>
+            <div className="skill-header">
+              <span>{skill.name}</span>
+              <span>{skill.level}%</span>
+            </div>
+            <div className="bar">
+              <div
+                className="progress"
+                style={{ width: `${skill.level}%` }}
+              ></div>
+            </div>
+          </div>
+        ))}
+        
     </section>
+    
+      </section>
+
+      
+
+   
   );
 };
 
-export default About;
 
+export default About;
 
 
 

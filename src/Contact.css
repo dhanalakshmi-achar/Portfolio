@@ -1,8 +1,8 @@
 /* Contact.css */
 .contact {
-  background: linear-gradient(135deg, #a2d2ff, #bde0fe); /* soft dreamy blues */
+  background: linear-gradient(135deg, #ffffff, #e1f1ff); /* soft dreamy blues */
   /* padding: 3rem; */
-  border-radius: 12px;
+
   color: #2e2e2e;
   text-align: center;
   animation: fadeUp 1s ease forwards;
