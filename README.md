@@ -1,16 +1,62 @@
-# React + Vite
+# Dhanalakshmi's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional portfolio showcasing my journey in **Cloud Computing, Big Data, Web Development, and UI/UX Design**.  
+Deployed with modern tools for a smooth, responsive experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Highlights
+-  Education: Diploma in Cloud Computing & Big Data  
+- Projects:  
+  - Dream Makeup Website (React + Supabase CRUD, pink aesthetic)  
+  - Strands Haircare Pitch Deck & Video (luxury branding)  
+  - Musofy – Music Website  
+  - Blog Website (HTML/CSS, clean design)  
+-  Design: 15+ Figma projects with premium layouts  
+-  Content Creation: Video editing & social media growth  
+-  Certifications:  
+  - AWS Cloud Practitioner  
+  - EY AI Skills Passport  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##  Tech Stack
+- **Frontend:** React, HTML, CSS, Figma  
+- **Backend:** Supabase  
+- **Database:** PostgreSQL  
+- **Other Skills:** Video Editing, Content Creation  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Sections
+- **Hero:** Intro + tagline  
+- **About:** Education, background, and story  
+- **Projects:** Featured work with links/screenshots   
+- **Contact:** Easy ways to reach me  
+
+---
+
+##  Deployment
+Live site: portfolio-mauve-three-94.vercel.app
+
+---
+
+##  Design Notes
+- Clean, minimal, professional layout  
+- Subtle animations & smooth scrolling  
+- Premium color scheme with cohesive storytelling flow  
+- Responsive design for mobile & desktop  
+
+---
+
+##  Future Additions
+- Blog integration for tech + beauty content  
+- Dark mode toggle  
+- More interactive project showcases  
+
+---
+
+##  Author
+**Dhanalakshmi**  
+Diploma Student in Cloud Computing & Big Data  
+Passionate about building beauty & haircare tech products, aesthetic UI design, and content creation 
